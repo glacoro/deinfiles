@@ -1,3 +1,5 @@
+記述途中
+
 # dein.vimとは
 - vimのプラグイン管理ツール
 - neobundleはbugfixのみになるため、代わり（というかこっちが本命的な）
@@ -55,7 +57,8 @@ if dein#check_install()
   call dein#install()
 endif
 
-"End dein Scripts-------------------------```
+"End dein Scripts-------------------------
+```
 
 # .vimrcの設定方法
 プラグインインストールのための記述についてまとめます
@@ -67,5 +70,4 @@ endif
  ``` call dein#install() ```  
 以上でインストールしたいプラグインがインストールされる
 
--
 -
