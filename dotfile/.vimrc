@@ -5,6 +5,7 @@ endif
 
 " Required:
 set runtimepath+=~/.vim/deinfiles//repos/github.com/Shougo/dein.vim
+"set runtimepath+=~/.vim/deinfiles//plugins/Shougo/dein.vim
 
 " Required:
 if dein#load_state('~/.vim/deinfiles/')
@@ -13,6 +14,7 @@ if dein#load_state('~/.vim/deinfiles/')
   " Let dein manage dein
   " Required:
   call dein#add('~/.vim/deinfiles//repos/github.com/Shougo/dein.vim')
+"  call dein#add('~/.vim/deinfiles//plugins/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
@@ -20,6 +22,33 @@ if dein#load_state('~/.vim/deinfiles/')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+
+  " my plugins 
+  " normal plugins
+  call dein#add('tomtom/tcomment_vim') 
+  call dein#add('tpope/vim-surround')
+  call dein#add('joshdick/onedark.vim')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('Shougo/neocomplete.vim')
+  call dein#add('jistr/vim-nerdtree-tabs')
+
+  " my plugin setting
+  " --> NERDTree setting
+  let NERDTreeShowHidden = 1
+  nmap <Leader><Tab> <C-w>w
+  " <-- NERDTree setting
+  " --->  onedark
+  let g:onedark_termcolors=16
+  colorscheme onedark
+  " <-- onedark
+
+  " --> vim setting
+  set number
+  set helplang=ja
+  set cursorline
+  set laststatus=2
+  set statusline=%F\%=\%W[%l/%L]
+  " <-- vim setting
 
   " Required:
   call dein#end()
